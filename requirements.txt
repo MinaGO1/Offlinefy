@@ -1,0 +1,7 @@
+dotenv
+pathlib
+yt_dlp
+spotipy
+PyQt6
+cryptography
+mutagen
