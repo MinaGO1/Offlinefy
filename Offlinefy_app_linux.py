@@ -14,9 +14,9 @@ from PyQt6.QtGui import QIcon
 # Load environment variables
 
 # Decrypt Spotify credentials
-key = 'QJepfqX9murLwicTn1QHfT-HjfDF-YToQBbR-wlcurg='
+key = 'xxxxxxxxxxxxx'
 cipher = Fernet(key)
-encrypted_credentials = 'gAAAAABnYHHMJiPIoNlVbZsq9qDvRASfcSJqMFPNwCNMnQVrNBiqX53lKI4U1PsBqgCRdxQWeYA5qMsr4URSTKUzahFkCQgK2ZNcCGNkCMMb6xGCnzU9H3QKAoRBsrxrQ3Nv2bQwm9rDV9bEIEh-mXh57wc5TzPG7grEwPh6esum5N3N6mPyd9Y='
+encrypted_credentials = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 cid, secret = cipher.decrypt(encrypted_credentials).decode().split(':')
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
